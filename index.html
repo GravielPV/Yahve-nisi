@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahve-Nisi </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+        <style>
+                    .logo-img {
+                        height: 70px;
+                        width: auto;
+                        display: block;
+                        opacity: 0;
+                        transform: translateY(-40px) scale(0.92);
+                        filter: drop-shadow(0 2px 12px rgba(201,166,109,0.10));
+                        border-radius: 18px;
+                        box-shadow: 0 4px 32px 0 rgba(201,166,109,0.10), 0 1.5px 8px 0 rgba(0,0,0,0.08);
+                        animation: logoModernIn 1.1s cubic-bezier(.23,1.02,.67,1.01) 0.2s forwards;
+                        transition: 
+                            transform 0.35s cubic-bezier(.23,1.02,.67,1.01),
+                            box-shadow 0.35s,
+                            filter 0.35s,
+                            height 0.3s;
+                    }
+            @media (max-width: 900px) {
+                .logo-img { height: 50px; }
+            }
+            @media (max-width: 600px) {
+                .logo-img { height: 36px; }
+            }
+            @keyframes logoModernIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-40px) scale(0.92);
+                }
+                60% {
+                    opacity: 1;
+                    transform: translateY(8px) scale(1.05);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0) scale(1);
+                }
+            }
+                    .logo-img:hover {
+                        transform: scale(1.10) rotate(-1.5deg);
+                        box-shadow: 0 8px 40px 0 rgba(99,102,241,0.18), 0 2px 12px 0 rgba(0,0,0,0.10);
+                        filter: drop-shadow(0 0 16px #6366f1cc) brightness(1.08);
+                    }
+        </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" style="display: flex; align-items: center;">
+                <img src="https://res.cloudinary.com/datuczhbk/image/upload/v1756060812/logo_real-removebg-preview_dyx2kl.png" alt="YAVEH NISI PUBLICACIONES Logo" class="logo-img" />
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-element">
+            <i class="fas fa-print" style="font-size: 2rem; color: rgba(99, 102, 241, 0.3);"></i>
+        </div>
+        <div class="floating-element">
+            <i class="fas fa-palette" style="font-size: 1.5rem; color: rgba(139, 92, 246, 0.3);"></i>
+        </div>
+        <div class="floating-element">
+            <i class="fas fa-magic" style="font-size: 2.5rem; color: rgba(6, 182, 212, 0.3);"></i>
+        </div>
+        <div class="hero-content">
+            <h1>Impresiones que Impactan</h1>
+            <p>Transformamos tus ideas en realidades tangibles con la más alta calidad y tecnología de vanguardia</p>
+            <a href="#services" class="cta-button">Descubre Nuestros Servicios</a>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section" id="portfolio" style="padding-top: 40px;">
+        <div class="container">
+            <h2 class="section-title fade-in">Nuestros Trabajos</h2>
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                     <div class="carousel-item">
+                        <video src="https://res.cloudinary.com/datuczhbk/video/upload/v1756061504/3_dxmwnd.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/datuczhbk/image/upload/v1755986541/135841488_737992227093615_2199854169058480467_n_gncyug.jpg" alt="Imagen 1">
+                    </div>
+                   
+                    <div class="carousel-item">
+                        <video src="https://res.cloudinary.com/datuczhbk/video/upload/v1756061489/5_gx8lf2.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/datuczhbk/image/upload/v1756061483/7_p1qw0t.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/datuczhbk/image/upload/v1756061483/2_py0rk6.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/datuczhbk/image/upload/v1756061483/6_wf74zc.jpg" alt="Imagen 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/datuczhbk/image/upload/v1756061483/4_pwm8xk.jpg" alt="Imagen 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/datuczhbk/image/upload/v1756061483/1_nqtmxp.jpg" alt="Imagen 6">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/datuczhbk/image/upload/v1755986541/247492562_400381254917381_3456290691251199551_n_eh1d0m.jpg" alt="Imagen 7">
+                    </div>
+                </div>
+                <button class="carousel-nav prev" onclick="moveCarousel(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-nav next" onclick="moveCarousel(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title fade-in">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Impresión Digital</h3>
+                    <p>Tecnología de última generación para impresiones de alta resolución con colores vibrantes y acabados perfectos</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Tarjetas de Presentación</h3>
+                    <p>Diseños únicos y materiales premium que causan una primera impresión memorable</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3>Banners & Señalética</h3>
+                    <p>Soluciones de gran formato para publicidad exterior e interior con materiales resistentes</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Material Editorial</h3>
+                    <p>Libros, revistas y catálogos con encuadernación profesional y acabados de calidad</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Textiles Personalizados</h3>
+                    <p>Serigrafía y bordado en camisetas, uniformes y productos textiles promocionales</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Productos Promocionales</h3>
+                    <p>Amplia gama de artículos personalizados para potenciar tu marca y fidelizar clientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <h2>Contáctanos</h2>
+                    <p style="margin-bottom: 2rem; font-size: 1.2rem; opacity: 0.9;">Estamos aquí para hacer realidad tus proyectos de impresión. ¡Hablemos!</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div >
+                                <strong >Dirección</strong>
+                        <br>
+                            Carr. Sánchez Vieja, Bajos de Haina 91000, República Dominicana
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Teléfono</strong><br>
+                            +1 (809) 957-3521
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong><br>
+                            info@printproagency.com
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Horarios</strong><br>
+                            Lun - Vie: 9:00 AM - 6:00 PM<br>
+                            Sáb: 10:00 AM - 5:00 PM
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-in">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (809) 555-0123">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Servicio de Interés</label>
+                            <select id="service" name="service">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="digital">Impresión Digital</option>
+                                <option value="cards">Tarjetas de Presentación</option>
+                                <option value="banners">Banners & Señalética</option>
+                                <option value="editorial">Material Editorial</option>
+                                <option value="textiles">Textiles Personalizados</option>
+                                <option value="promotional">Productos Promocionales</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane" style="margin-right: 0.5rem;"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Nuestra Ubicación</h2>
+            <div class="map-container fade-in">
+                <iframe class="map-frame" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.9146902908556!2d-70.04085602481132!3d18.396733382672966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea561b24f928603%3A0x4aa3a49b22423484!2sYAVEH%20NISI%20PUBLICACIONES!5e0!3m2!1ses-419!2sdo!4v1756060316748!5m2!1ses-419!2sdo" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.facebook.com/people/Yahve-Nisi/100064781976850/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/nisiyahve/?hl=es" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.link/nsud2k" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2025 Yahve-Nisi Publicaciones. Todos los derechos reservados.</p>
+            <p style="margin-top: 0.5rem; opacity: 0.7; font-size: 0.9rem;">Diseñado con ❤️ para hacer realidad tus ideas- <a href="https://gravielpv.github.io/Gaby-Dev/index.html">Gaby Dev</a></p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float" id="whatsappBtn">
+        <div class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring-2"></div>
+        </div>
+        <div class="whatsapp-tooltip">
+            <span>¡Contáctanos por WhatsApp!</span>
+        </div>
+    </div>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
